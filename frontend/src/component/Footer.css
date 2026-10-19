@@ -1,0 +1,364 @@
+
+/* ================================
+   GYMSHAKTI FOOTER
+================================ */
+
+.gym-footer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 78px 0 55px;
+  color: #d1e1f2;
+  background:
+    radial-gradient(
+      circle at 12% 100%,
+      rgba(0, 104, 75, 0.30),
+      transparent 43%
+    ),
+    linear-gradient(
+      115deg,
+      #020817 0%,
+      #03121b 48%,
+      #00251e 100%
+    );
+  border-bottom: 3px solid #00a875;
+  font-family: inherit;
+}
+
+.gym-footer *,
+.gym-footer *::before,
+.gym-footer *::after {
+  box-sizing: border-box;
+}
+
+.gym-footer-container {
+  width: 100%;
+  max-width: 1540px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+/* ================================
+   FOOTER GRID
+================================ */
+
+.gym-footer-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1.1fr 1.1fr 1.1fr 0.9fr;
+  gap: 28px;
+  align-items: start;
+}
+
+/* ================================
+   BRAND
+================================ */
+
+.gym-footer-brand {
+  min-width: 0;
+}
+
+.gym-footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 750;
+  letter-spacing: -0.7px;
+  transition: color 0.25s ease;
+}
+
+.gym-footer-logo:hover {
+  color: #b7ff00;
+}
+
+.gym-footer-logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 39px;
+  height: 39px;
+  flex-shrink: 0;
+  border: 1px solid rgba(183, 255, 0, 0.5);
+  border-radius: 10px;
+  color: #b7ff00;
+  background: linear-gradient(145deg, #113a31, #07121b);
+  box-shadow: 0 0 15px rgba(0, 230, 155, 0.12);
+  font-size: 27px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.gym-footer-brand > p {
+  margin: 0;
+  color: #a8c4df;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.gym-footer-made {
+  margin-top: 20px;
+  color: #00e6a0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.gym-footer-made span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+/* ================================
+   FOOTER COLUMNS
+================================ */
+
+.gym-footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  min-width: 0;
+}
+
+.gym-footer-column h4 {
+  margin: 0 0 10px;
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 1.4;
+  font-weight: 750;
+  letter-spacing: 1.2px;
+}
+
+.gym-footer-column a {
+  display: inline-block;
+  max-width: 100%;
+  color: #a8c4df;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.45;
+  font-weight: 400;
+  overflow-wrap: anywhere;
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.gym-footer-column a:hover {
+  color: #00e6a0;
+  transform: translateX(4px);
+}
+
+/* ================================
+   BOTTOM COPYRIGHT
+================================ */
+
+.gym-footer-bottom {
+  margin-top: 60px;
+  padding-top: 38px;
+  border-top: 1px solid rgba(0, 230, 160, 0.22);
+  text-align: center;
+}
+
+.gym-footer-bottom > p {
+  margin: 0 0 12px;
+  color: #7fa9cc;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.gym-footer-powered {
+  color: #527c9c;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.gym-footer-powered a {
+  color: #00e6a0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.25s ease;
+}
+
+.gym-footer-powered a:hover {
+  color: #b7ff00;
+}
+
+/* ================================
+   RESPONSIVE: LAPTOP
+================================ */
+
+@media (max-width: 1200px) {
+  .gym-footer {
+    padding-top: 65px;
+  }
+
+  .gym-footer-container {
+    padding: 0 30px;
+  }
+
+  .gym-footer-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 45px 35px;
+  }
+
+  .gym-footer-brand {
+    grid-column: span 3;
+  }
+
+  .gym-footer-brand > p br {
+    display: none;
+  }
+
+  .gym-footer-brand > p {
+    max-width: 480px;
+  }
+}
+
+/* ================================
+   RESPONSIVE: TABLET
+================================ */
+
+@media (max-width: 768px) {
+  .gym-footer {
+    padding: 50px 0 30px;
+  }
+
+  .gym-footer-container {
+    padding: 0 24px;
+  }
+
+  .gym-footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 38px 28px;
+  }
+
+  .gym-footer-brand {
+    grid-column: span 2;
+  }
+
+  .gym-footer-logo {
+    font-size: 25px;
+  }
+
+  .gym-footer-column h4 {
+    font-size: 15px;
+  }
+
+  .gym-footer-column a {
+    font-size: 14px;
+  }
+
+  .gym-footer-bottom {
+    margin-top: 22px;
+    padding-top: 28px;
+  }
+
+  .gym-footer-bottom > p {
+    font-size: 14px;
+  }
+}
+
+/* ================================
+   RESPONSIVE: MOBILE
+================================ */
+
+@media (max-width: 480px) {
+  .gym-footer {
+    padding: 42px 0 25px;
+  }
+
+  .gym-footer-container {
+    padding: 0 20px;
+  }
+
+  .gym-footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px 18px;
+  }
+
+  .gym-footer-brand {
+    grid-column: span 2;
+  }
+
+  .gym-footer-logo {
+    gap: 10px;
+    font-size: 24px;
+  }
+
+  .gym-footer-logo-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 24px;
+  }
+
+  .gym-footer-brand > p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .gym-footer-brand > p br {
+    display: none;
+  }
+
+  .gym-footer-made {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+
+  .gym-footer-column {
+    gap: 12px;
+  }
+
+  .gym-footer-column h4 {
+    margin-bottom: 6px;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+  }
+
+  .gym-footer-column a {
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  .gym-footer-bottom {
+    margin-top: 35px;
+    padding-top: 24px;
+  }
+
+  .gym-footer-bottom > p {
+    font-size: 12px;
+  }
+
+  .gym-footer-powered {
+    font-size: 12px;
+  }
+}
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 350px) {
+  .gym-footer-container {
+    padding: 0 14px;
+  }
+
+  .gym-footer-grid {
+    gap: 28px 12px;
+  }
+
+  .gym-footer-column h4 {
+    font-size: 12px;
+  }
+
+  .gym-footer-column a {
+    font-size: 12px;
+  }
+}
